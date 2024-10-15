@@ -1,0 +1,333 @@
+:root{
+    --darkcyan: #0fe0e0;
+}
+
+
+body {
+    color:white;
+    background-color: #ddd;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.mmm{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-position: center;
+    z-index: 0;
+}
+.cont{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.logo{
+	text-align: left;
+    font-size: xx-large;
+}
+.logo b{
+    color: var(--darkcyan);
+}
+.lg{
+	width: 50px;
+	height: 50px;
+}
+.bb a {
+	font-size: larger;
+	color: var(--darkcyan);
+    text-decoration: none;
+    position: relative; /* Enable relative positioning for the hover effect */
+    display: inline-block; /* Allow adding padding for slight vertical space */
+    padding-bottom: 2px; /* Space for the line to appear below the text */
+}
+ 
+a:after {
+    content: ""; /* Add an empty pseudo-element after the link */
+    position: absolute; /* Position the line absolutely relative to the link */
+    bottom: 0; /* Align the line to the bottom of the link (underline effect) */
+    left: 50%; /* Center the line horizontally using left: 50% */
+    transform: translateX(-50%); /* Offset the line by half its width to center it */
+    width: 0; /* Initially set the line width to 0 (invisible) */
+    height: 2px; /* Set the line height */
+	background-color: var(--darkcyan);/* Set the line color to cyan */
+    transition: width 0.7s ease-in-out; /* Define the animation for the line */
+  }
+  
+  a:hover:after {
+    width: 100%; /* Animate the line width to 100% on hover (full underline) */
+  }
+  .bb{
+	text-align: right;
+	padding-right: 3%;
+}
+.bb a:hover{
+    color: aliceblue;
+}
+ 
+.gg{
+	text-align: center;
+}
+label{
+	color: red;
+	font-size: larger;
+}
+#srh{
+	width: 300px;
+	height: 40px;
+	border-radius: 20px;
+}
+.bod{
+    justify-content: space-around;
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    color: antiquewhite;
+}
+.pic {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(222, 255, 255);
+    border-radius: 50%;
+}
+.cc{
+    color: black;
+    padding-left: 40%;
+    font-size: larger;
+}
+.frs{
+    color: var(--darkcyan);
+}
+.nmi{
+    font-size: x-large;
+    font-weight: 900;
+}
+
+main.about {
+    display: flex; /* Enable flexbox for the main section */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically (optional) */
+    width: 100%; /* Ensure main section fills available width */
+  }
+
+  /*about*/
+  .abt{
+   font-size: xx-large;
+  }
+  .about-me {
+    text-align: center; /* Center content within the section */
+    position: relative; /* Required for absolute positioning */
+  }
+  
+  .profile-pic {
+    width: 800px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    border-radius: 10%; /* Add rounded corners (optional) */
+    transition: transform 0.3s ease-in-out; /* Add hover effect transition */
+    opacity: 0.6; /* Default opacity */
+    transition: opacity 0.3s ease-in-out; /* Add hover effect transition */
+  }
+  
+  .about-me:hover .profile-pic {
+    opacity: 0.1; /* Reduce opacity on hover */
+  }
+  
+  .profile-image-wrapper {
+    position: relative; /* Required for absolute positioning of text */
+    overflow: hidden; /* Clip overflowing content (optional) */
+  }
+  
+  .profile-text {
+    position: absolute; /* Position the text absolutely over the image */
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Offset text from center */
+    color: white; /* Text color */
+    font-size: xx-large;
+    text-align: center; /* Center text alignment */
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease-in-out; /* Add hover effect transition */
+  }
+  
+  .about-me:hover .profile-text {
+    opacity: 100; /* Show text on hover */
+  }
+
+  .skills h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+  }
+  .skill-grid{
+    width: 100lvw;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: 'break-spaces'; /* Prevent items from wrapping to new lines */
+    display: flex;
+  }
+  .skills {
+    
+    justify-content: center;
+    text-align: center;
+  }
+  .timeline{
+    display: flex;
+  }
+  .skill {
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(17, 17, 17);
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+  }
+  .skill i{
+    color: var(--darkcyan);
+    padding-top: 20%;
+   font-size: 70px;
+  }
+  .journey{
+    padding-top: 5%;
+    text-align: center;
+  }
+  .timeline{
+    justify-content: center;
+    width: 100lvw;
+    display: flex;
+  }
+  .timeline-item{
+    text-align: center;
+    display: inline-block; /* Make list items behave like inline elements */
+    width: 300px;
+    height: 200px;
+    background-color: rgb(17, 17, 17);
+    margin-bottom: 20px;
+    margin-left: 1%;
+    border-radius: 10%;
+    padding-top: 3%;
+  }
+  .log{
+    width: 80px;
+    height: 80px;
+  }
+  .wtf{
+    width: 100px;
+    height: 80px;
+  }
+  .timeline-item i{
+    padding-top: 2%;
+    color: rgb(0, 185, 231);
+   font-size: 70px;
+  }
+  .personal-touch{
+    padding-bottom: 7%;
+    text-align: center;
+  }
+  .personal-touch p{
+font-size: large;
+  }
+  .personal-touch i{
+    color: var(--darkcyan)
+      }
+  .personal-touch img{
+    width: 200px;
+    border-radius: 10%;
+  }
+  .contact{
+    background-color: rgb(17, 17, 17);
+    width: 100vw;
+  }
+  .contact-info{
+    color: white;
+  }
+  #contact-me {
+    display: flex;
+    text-align: center; 
+    padding: 100px 0; 
+  }
+  
+  #contact-info h2 {
+    margin-bottom: 20px; 
+  }
+    
+  .contact-info h3 {
+    color: #ffffff; 
+  }
+  .contact-info p,a {
+    cursor:pointer;
+    text-decoration: none;
+    color: #e04444; 
+  }
+  .contact-info, .contact-form {
+    display: inline-block; 
+    vertical-align: top; 
+    width: 45%; 
+    margin: 0 5%; 
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+  }
+  
+  .social-links {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .social-links li {
+    margin-bottom: 10px; 
+  }
+  
+  .social-links a {
+    text-decoration: none; 
+    color: var(--darkcyan); 
+  }
+  
+  .social-links a i {
+    margin-right: 10px; 
+    font-size: 20px; 
+  }
+  .contact-form{
+   width: 50%;
+   height: 40%;
+  }
+  .contact-form form {
+    display: block;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px; 
+  }
+  
+  .contact-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #e04444;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 70%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+  }
+  
+  .contact-form button {
+    font-weight: bold;
+    background-color: rgb(13, 131, 131); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .contact-form button:hover {
+    background-color: #e04444;
+  }
+  
